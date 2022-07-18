@@ -112,7 +112,7 @@ then
 fi
 
 # Required installation paths. To install elsewhere (which is unsupported)
-# you can untar https://github.com/Homebrew/brew/tarball/master
+# you can untar https://ghproxy.com/github.com/Homebrew/brew/tarball/master
 # anywhere you like.
 if [[ -z "${HOMEBREW_ON_LINUX-}" ]]
 then
@@ -155,8 +155,8 @@ else
 fi
 CHMOD=("/bin/chmod")
 MKDIR=("/bin/mkdir" "-p")
-HOMEBREW_BREW_DEFAULT_GIT_REMOTE="https://github.com/Homebrew/brew"
-HOMEBREW_CORE_DEFAULT_GIT_REMOTE="https://github.com/Homebrew/homebrew-core"
+HOMEBREW_BREW_DEFAULT_GIT_REMOTE="https://ghproxy.com/github.com/Homebrew/brew"
+HOMEBREW_CORE_DEFAULT_GIT_REMOTE="https://ghproxy.com/github.com/Homebrew/homebrew-core"
 
 # Use remote URLs of Homebrew repositories from environment if set.
 HOMEBREW_BREW_GIT_REMOTE="${HOMEBREW_BREW_GIT_REMOTE:-"${HOMEBREW_BREW_DEFAULT_GIT_REMOTE}"}"
@@ -178,7 +178,7 @@ MACOS_NEWEST_UNSUPPORTED="13.0"
 MACOS_OLDEST_SUPPORTED="10.15"
 
 # For Homebrew on Linux
-REQUIRED_RUBY_VERSION=2.6    # https://github.com/Homebrew/brew/pull/6556
+REQUIRED_RUBY_VERSION=2.6    # https://ghproxy.com/github.com/Homebrew/brew/pull/6556
 REQUIRED_GLIBC_VERSION=2.13  # https://docs.brew.sh/Homebrew-on-Linux#requirements
 REQUIRED_CURL_VERSION=7.41.0 # HOMEBREW_MINIMUM_CURL_VERSION in brew.sh in Homebrew/brew
 REQUIRED_GIT_VERSION=2.7.0   # HOMEBREW_MINIMUM_GIT_VERSION in brew.sh in Homebrew/brew
